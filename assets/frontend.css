@@ -1,0 +1,128 @@
+/**
+ * GEO Authority Suite - Frontend Styles
+ * Styles for entity shortcodes
+ */
+
+/* Entity Link - Basic */
+.entity-link {
+    color: #0073aa;
+    text-decoration: underline;
+}
+
+.entity-link:hover {
+    color: #005177;
+}
+
+/* Entity Mention (no link) */
+.entity-mention {
+    font-weight: 600;
+    color: #1d2327;
+}
+
+/* Entity Inline Image */
+.entity-inline-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+/* Entity Tooltip */
+.entity-tooltip {
+    cursor: help;
+    border-bottom: 1px dotted currentColor;
+}
+
+.entity-tooltip:hover {
+    border-bottom-style: solid;
+}
+
+/* Entity Card */
+.entity-card {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    margin: 20px 0;
+    max-width: 450px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease;
+}
+
+.entity-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.entity-card-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entity-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+}
+
+.entity-card-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d2327;
+    line-height: 1.3;
+}
+
+.entity-card-title {
+    font-size: 14px;
+    color: #646970;
+    font-style: italic;
+}
+
+.entity-card-description {
+    font-size: 14px;
+    color: #50575e;
+    margin: 8px 0 0;
+    line-height: 1.5;
+}
+
+.entity-card-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    background: #0073aa;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.entity-card-link:hover {
+    background: #005177;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .entity-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .entity-card-image {
+        width: 100px;
+        height: 100px;
+    }
+}
